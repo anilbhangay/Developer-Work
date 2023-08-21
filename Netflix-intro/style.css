@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 .background .logo {
@@ -19,6 +20,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    animation: scale 3s ease forwards;
+    animation-delay: 1.7s;
 }
 
 .background .logo .brush1 {
@@ -28,9 +31,11 @@
     justify-content: center;
     align-items: flex-end;
     position: relative;
+    animation: height 0.5s ease forwards;
+    animation-delay: 4s;
 }
 
-.background .logo .color {
+.background .logo .brush1 .color {
     width: 100%;
     height: 0%;
     background-color: rgb(194, 0, 0);
@@ -68,7 +73,27 @@
     animation-delay: 0.5s;
 }
 
+.lines {
+    width: max-content;
+    height: 100%;
+    display: none;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 0;
+   
+}
 
+.lines .line {
+    width: 1px;
+    height: 100%;
+    background: red;
+    margin-right: 1px;
+    animation: margin 2s linear forwards, bgcolor 0.2s linear forwards;
+    animation-delay: 0.2s;
+}
+
+
+/* Forward animation starts */
 
 @keyframes moveup{
     from {
@@ -79,6 +104,7 @@
      }
 }
 
+/* Reverse animation */
 
 @keyframes movedown{
     from {
@@ -88,3 +114,63 @@
         height: 0;
      }
 }
+
+
+/* Main animation start */
+
+  @keyframes opacity {
+      0%{
+        opacity: 1;
+      }
+       100%{
+        opacity: 0;
+       }
+  }
+
+  @keyframes margin {
+    0%{
+        width: 1px;
+        margin-right: 1px;
+        box-shadow: none;
+    } 
+    100%{
+        width: 40px;
+        margin-right: var(--m);
+        box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+    }
+  }
+
+
+  @keyframes bgcolor {
+     0%{
+        background: red;
+     }
+      30%{
+           background: radial-gradient(circle, rgba(255, 0, 0, 1) 75%, rgba(0, 0, 0.545)100%);
+     }
+       100%{
+           background: var(--c);
+       }
+  }
+
+
+  @keyframes height {
+    0%{
+        width: 50px;
+        height: 220px;
+    }
+      100%{
+        width: max-content;
+        height: 100vh;
+      }
+  }
+
+
+  @keyframes scale {
+    0%{
+        transform: scale(1);
+    } 
+     100%{
+        transform: scale(1.5);
+    }
+  }
