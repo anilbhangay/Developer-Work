@@ -3,6 +3,7 @@
   const stick3 = document.getElementsByClassName("brush3")[0]
   const lines = document.getElementsByClassName("lines")[0]
 
+
 // Make reverse animations trigger
 
 setTimeout(() => {
@@ -60,7 +61,6 @@ let colors = [
 colors.map((color) => {
    const line = document.createElement('div');
    const randomMargin = Math.floor(Math.random() * 1000);
-
 
    line.className = 'line';
    line.style.setProperty('--m', `${randomMargin}px`);
