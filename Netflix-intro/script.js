@@ -69,7 +69,3 @@ colors.map((color) => {
  
 });
 
-
-let set = [1,2,3,4,5,6,7];
-const bet = set.reduce((acc,der) => acc + der);
-console.log(bet);
