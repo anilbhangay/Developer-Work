@@ -67,4 +67,4 @@ colors.map((color) => {
    line.style.setProperty('--c', color);
    lines.appendChild(line);
  
-});
+}); 
