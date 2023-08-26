@@ -68,4 +68,3 @@ colors.map((color) => {
    lines.appendChild(line);
  
 }); 
-
