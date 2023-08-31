@@ -9,10 +9,11 @@ const Hero = () =>  (
           <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
               <img src={discount} alt="discount" 
              className='w-[32px] h-[32px]' />
+               <span className='text-white'>20%</span>
               
           </div>
       </div>
-    </section>  
+    </section> 
     
   )
 
