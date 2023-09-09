@@ -15,7 +15,7 @@ const GetStarted = () => (
              </p>
       </div>
     </div>
-  )
+  );
 
 
-export default GetStarted
+export default GetStarted;
