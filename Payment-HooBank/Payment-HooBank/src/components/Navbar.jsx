@@ -5,6 +5,7 @@ import { navLinks } from '../constants';
 
 
 const Navbar = () => {
+   const [active, setActive] = useState("Home");
    const [toggle, setToggle] = useState(false)
 
   return (
@@ -13,7 +14,11 @@ const Navbar = () => {
 
          <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                {navLinks.map((nav, index) => (
-                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'} text-white`} 
+                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                  active === nav.title ? "text-white" : "text-dimWhite"
+                }
+                  ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'} text-white`} 
+                   onClick={() => setActive(nav.title)}
                  >
                    <a href={`#${nav.id}`}>
                      {nav.title}
@@ -21,6 +26,7 @@ const Navbar = () => {
                  </li>
                ))}
          </ul>
+
          <div className="sm:hidden flex flex-1 justify-end items-center">
                  <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)}/>
 
@@ -40,6 +46,6 @@ const Navbar = () => {
          </div>
      </nav>
   )
-}
+};
 
-export default Navbar
+export default Navbar;
