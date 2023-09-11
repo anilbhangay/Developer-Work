@@ -10,7 +10,7 @@ const Stats = () =>  (
            </div>
          ))}
      </section>
-  )
+  );
 
 
-export default Stats
+export default Stats;
