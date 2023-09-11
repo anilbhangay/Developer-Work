@@ -38,6 +38,7 @@ const Navbar = () => {
                   active === nav.title ? "text-white" : "text-dimWhite"
                 }
                   ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`} 
+                  onClick={() => setActive(nav.title)}
                  >
                    <a href={`#${nav.id}`}>
                      {nav.title}
