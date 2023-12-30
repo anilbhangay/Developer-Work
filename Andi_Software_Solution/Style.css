@@ -5,6 +5,13 @@
     font-family: sans-serif;
 }
 
+.container {
+    padding: 10xp 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
