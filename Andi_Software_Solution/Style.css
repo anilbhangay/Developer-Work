@@ -12,14 +12,20 @@
     background-color: #ffffff;
 }
 
+
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    text-decoration: none;
-    font-size: 13px;
+   display: flex;
+   justify-content: center;
 }
+
+.navbar a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    
+}
+
 
 footer {
     display: flex;
