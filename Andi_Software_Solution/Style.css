@@ -12,6 +12,10 @@
     background-color: #ffffff;
 }
 
+.main .logo {
+    width: 55px;
+    padding-left: 30px;
+}
 
 .navbar {
    display: flex;
