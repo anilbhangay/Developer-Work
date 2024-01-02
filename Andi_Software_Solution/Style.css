@@ -43,3 +43,12 @@ footer {
     font-weight: 200;
     color: #ffffff;
 }
+
+.header .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 20px 30px;
+}
