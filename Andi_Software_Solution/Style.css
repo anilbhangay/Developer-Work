@@ -60,3 +60,11 @@ footer {
     text-decoration: none;
     color: gray;
 }
+
+.header .home p {
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
