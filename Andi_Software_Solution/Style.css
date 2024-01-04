@@ -10,6 +10,7 @@
     padding: 10xp 20px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -74,8 +75,17 @@ footer {
     display: contents;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
-    margin-top: 20px;
-    border: none;
+    padding: 0px 30px;
+    margin-top: 25px;
+    text-decoration: none;
 }
 
+
+.cloud-software {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    margin-top: 25px;
+    text-decoration: none;
+}
