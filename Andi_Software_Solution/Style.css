@@ -99,3 +99,8 @@ footer {
     font-family: sans-serif;
 }
 
+.table img {
+    width: 50px;
+    height: 60px;
+    padding: 10px 20px;
+}
