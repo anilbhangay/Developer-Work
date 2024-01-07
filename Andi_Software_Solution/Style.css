@@ -104,3 +104,12 @@ footer {
     height: 60px;
     padding: 10px 20px;
 }
+
+.table td h3 {
+    padding: 10px 22px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
