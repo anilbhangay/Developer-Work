@@ -14,20 +14,21 @@
 }
 
 
-.main .logo {
-    width: 55px;
-    padding-left: 30px;
+.navbar .logo {
+    width: 60px;
 }
 
 
 .navbar {
    display: flex;
    justify-content: center;
+   text-align: center;
+   margin: 18px 0px;
 }
 
 .navbar a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: black;
     
