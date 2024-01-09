@@ -82,7 +82,20 @@ footer {
     text-align: center;
     font-size: 27px;
     font-family: sans-serif;
-    
+    margin: 13px 0px;
+}
+
+.about .content-1 {
+    display: contents;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+.about .content-1 h4 {
+      text-align: center;
+      font-size: 25px;
+      margin: 15px 0px;
 }
 
 
