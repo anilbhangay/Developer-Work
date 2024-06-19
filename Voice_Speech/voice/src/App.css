@@ -194,13 +194,12 @@ body {
   color: #fff;
 }
 
-.logo  {
+.stop-icon {
   display: flex;
-  font-size: 20px;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  color: #000;
+  font-size: 22px;
+  width: 19x;
+  height: 12px;
+  color: #fff;
 }
 
 .mic {
@@ -239,7 +238,6 @@ body {
 .mic-icon {
   font-size: 26px;
   cursor: pointer;
-  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 30%; 

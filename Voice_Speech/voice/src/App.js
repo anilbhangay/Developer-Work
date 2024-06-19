@@ -3,7 +3,8 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMicrophone,
-  faMicrophoneSlash,
+  faMicrophoneSlash, 
+  faCircleStop
 } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
@@ -13,7 +14,6 @@ const App = () => {
   };
   return (
     <>
-      <div className="logo"><h2>AI<span>TALK</span></h2></div>
       <div class="mic">
         <div class="mic-icon" onClick={handleclick}>
           <FontAwesomeIcon
@@ -22,6 +22,7 @@ const App = () => {
         </div>
         <div class="mic-shadow"></div>
       </div>
+      <div className="stop-icon"><FontAwesomeIcon icon={faCircleStop} /></div>
     </>
   );
 };
