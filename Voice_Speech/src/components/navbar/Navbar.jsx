@@ -1,22 +1,20 @@
 import React from 'react';
 import "./Navbar.css";
-import Voice from '../voice/Voice';
-
-
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicrophoneLines } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
     <>
     <div className='navbar'>
-         <h3 className="logo">
-          Ai.<span>TALK</span>
+       <h3 className="logo">
+        <FontAwesomeIcon style={{color:'#fff', width:'20px'}} icon={faMicrophoneLines} /> Ai.<span>TALK</span>
         </h3>
         <div className="signup">
-          {/* <Link to="/Signup"><button>Signup</button></Link> */}
-          <button>Signup</button>
+          <Link to="/Signup"><button>Signup</button></Link>
         </div>
     </div>
-    <Voice />
     </>
   )
 }

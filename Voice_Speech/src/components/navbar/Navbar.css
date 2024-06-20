@@ -27,10 +27,11 @@
 
 .navbar .signup button {
     font-size: 20px;
-    padding: 11px;
-    background-color: blue;
+    padding: 10px 16px;
+    background-color: #0000ff;
     border: none;
     border-radius: 20px;
+    text-decoration: none;
     color: #fff;
     cursor: pointer;
 }

@@ -1,17 +1,13 @@
- /* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ body {
   overflow: hidden;
-  height: auto;
   background: #3b0e68; 
   color: #fff;
-} */
+}
 
 
 .mic {
   position: absolute;
-  top: 54%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -30,21 +26,21 @@
 }
 
 .mic::before {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-color: #1a084e;
 }
 
 .mic::after {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   background-color: rgba(110, 107, 107, 0.862);  
   /* #2f1e5f */
   animation: circle-size 0.8s linear infinite alternate;
 }
 
 .mic-icon {
-  font-size: 25px;
+  font-size: 24px;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -57,20 +53,25 @@
   z-index: 3;
 } 
 
-.container .stop-icon {
-  font-size: 52px;
+.container .play-stop {
+  font-size: 45px;
   position: absolute;
-   top: 80%;
-   left: 24%;
+  top: 80%;
+  left: 25%;
   cursor: pointer;
 }
 
-.container .play-icon {
-  font-size: 52px;
+
+.container .close-icon {
+  font-size: 45px;
   position: absolute;
   top: 80%;
   left: 70%;
   cursor: pointer;
+}
+
+.container .close-icon:hover {
+  color: #ff0000;
 }
 
 /* .mic-icon::before, .mic-icon::after {
@@ -98,8 +99,8 @@
   }  */
 
  .mic-shadow {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -112,14 +113,15 @@
   transform-origin: center;
 } 
 
+
 @keyframes circle-size {
   from {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
   }
   to {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 }
 
