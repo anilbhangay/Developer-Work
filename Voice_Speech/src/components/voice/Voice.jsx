@@ -7,20 +7,18 @@ import {
   faMicrophoneSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Voice = () => {
+
+const Voice = ({ onClose }) => {
   const [ismicrophone, setIsmicrophone] = useState(false);
-  const [isbutton, setIsbutton] = useState(false);
+  
 
   const handleclick = () => {
     setIsmicrophone((prevState) => !prevState);
   };
   
-  const handleplay = () => {
-    setIsbutton((prevState) => !prevState);
-  };
-
+ 
   return (
-   
+    <>
      <div className="container">
       <div class="mic">
         <div class="mic-icon" onClick={handleclick}>
@@ -30,16 +28,13 @@ const Voice = () => {
         </div>
         <div class="mic-shadow"></div>
       </div>
-      {/* <div className="play-icon"><FontAwesomeIcon icon={faCirclePlay} /></div>
-      <div className="stop-icon">
-      <FontAwesomeIcon icon={faCirclePause} />
-      </div> */}
-      <div className="play-stop" onClick={handleplay}>
-      <FontAwesomeIcon icon={isbutton ? faCirclePause : faCirclePlay } />
+      <div className="play-stop" onClick={handleclick}>
+      <FontAwesomeIcon icon={ismicrophone ? faCirclePause : faCirclePlay } />
       </div>
 
-      <div className="close-icon"><FontAwesomeIcon icon={faCircleXmark} /></div>
+      <div className="close-icon" onClick={onClose}><FontAwesomeIcon icon={faCircleXmark} /></div>
       </div>
+      </>
   );
 };
 

@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
-import { faEyeSlash, faEye,faRotateRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Password.css';
-
-
+import React, { useState } from "react";
+import {
+  faEyeSlash,
+  faEye,
+  faRotateRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Password.css";
 
 const Password = () => {
-  const [Email, setEmail]=useState('');
-  const [password, setPassword] = useState('');
-  const [reenteredPassword, setReenteredPassword] = useState('');
+  const [Email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [reenteredPassword, setReenteredPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showReenteredPassword, setShowReenteredPassword] = useState(false);
   const [errors, setErrors] = useState({});
-  const [backendError, setBackendError] = useState('');
-  const[loading, setLoading]=useState(false)
- 
+  const [backendError, setBackendError] = useState("");
+  const [loading, setLoading] = useState(false);
+
   // const { token } = useParams();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'Email') {
+    if (name === "Email") {
       setEmail(value);
-    } else if (name === 'Password') {
+    } else if (name === "Password") {
       setPassword(value);
-    } else if (name === 'Reenterpassword') {
-      setReenteredPassword(value)
+    } else if (name === "Reenterpassword") {
+      setReenteredPassword(value);
     }
-    setErrors({ ...errors, [name]: '' }); // Clear error when typing
+    setErrors({ ...errors, [name]: "" }); // Clear error when typing
   };
-  
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -66,23 +66,23 @@ const Password = () => {
     // If there are no errors, you can proceed with form submission
     if (Object.keys(validationError).length === 0) {
       try {
-        const response = await fetch(`http://localhost:5000/resetpassword`,{
-          method: 'POST',
+        const response = await fetch(`http://localhost:5000/resetpassword`, {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
-          body: JSON.stringify({email:Email,
-                       password ,
-                       confirm_password:reenteredPassword, // Ensure key matches backend
-                     
-        })
-      });
+          body: JSON.stringify({
+            email: Email,
+            password,
+            confirm_password: reenteredPassword, // Ensure key matches backend
+          }),
+        });
         if (response.ok) {
           setTimeout(() => {
             setLoading(false); // Turn off loading after 5 seconds
-            window.location.href = '/loginform';
+            window.location.href = "/loginform";
           }, 2000);
-          console.log('Password reset successful');
+          console.log("Password reset successful");
         } else {
           // Password reset failed, handle error
           const data = await response.json();
@@ -92,10 +92,10 @@ const Password = () => {
           setLoading(false);
         }
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
         setLoading(false);
       }
-    }else {
+    } else {
       setLoading(false); // Turn off loading if there are validation errors
     }
   };
@@ -109,61 +109,91 @@ const Password = () => {
   };
 
   return (
-    <div className='head-password'>
-      <div className='head-text'>
-        <h2>Create Your New Password</h2>
+    <div className="head-password">
+      <div className="head-text">
+        <h2>Create your New Password</h2>
       </div>
-      <div className='container'>
+      <div className="conta-iner">
         <h3>Reset Password </h3>
-        <form  method='POST'onSubmit={handleSubmit}>
-        <div className='container-input'>
+        <form method="POST" onSubmit={handleSubmit}>
+          <div className="conta-iner-input">
             <input
-              type='email'
+              type="email"
               value={Email}
               onChange={handleChange}
-              name='Email'
-              placeholder='Email'
-            /><br/>
-          {errors.Email && <span className='error-name-pssd' >{errors.Email}</span>}<br/>
-          </div>
-          <div className='container-input'>
-            <input
-              type={showPassword ? 'text' : 'password'}
-              value={password}
-              onChange={ handleChange}
-              placeholder='Enter Password'
-              name='Password'
+              name="Email"
+              placeholder="Email"
             />
-            <span
-              id='icon-eye-pass'
-              onClick={togglePasswordVisibility}
-            >
-              <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} size='sm' /><br/>
-            </span>
-            {errors.Password && <span className='error-name-pssd' id='error-name'>{errors.Password}</span>}<br/>
+            <br />
+            {errors.Email && (
+              <span className="error-name-pssd">{errors.Email}</span>
+            )}
+            <br />
           </div>
-          <div className='container-input'>
+          <div className="conta-iner-input">
             <input
-              type={showReenteredPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={handleChange}
+              placeholder="Enter Password"
+              name="Password"
+            />
+            <span id="icon-eye-pass" onClick={togglePasswordVisibility}>
+              <FontAwesomeIcon
+                icon={showPassword ? faEye : faEyeSlash}
+                size="sm"
+              />
+              <br />
+            </span>
+            {errors.Password && (
+              <span className="error-name-pssd" id="error-name">
+                {errors.Password}
+              </span>
+            )}
+            <br />
+          </div>
+          <div className="conta-iner-input">
+            <input
+              type={showReenteredPassword ? "text" : "password"}
               value={reenteredPassword}
               onChange={handleChange}
-              placeholder='Re-enter Password'
-              name='Reenterpassword'
+              placeholder="Re-enter Password"
+              name="Reenterpassword"
             />
             <span
-              id='icon-eye-pass'
+              id="icon-eye-pass"
               onClick={toggleReenteredPasswordVisibility}
             >
-              <FontAwesomeIcon icon={showReenteredPassword ? faEye : faEyeSlash} size='sm' /><br/>
+              <FontAwesomeIcon
+                icon={showReenteredPassword ? faEye : faEyeSlash}
+                size="sm"
+              />
+              <br />
             </span>
-            {errors.Reenterpassword && <span className='error-name-pssd' id='error-name-renter'>{errors.Reenterpassword}</span>}<br/>
-            {backendError&&<span className="error-name-backend-log">{backendError}</span> }<br/>
+            {errors.Reenterpassword && (
+              <span className="error-name-pssd" id="error-name-renter">
+                {errors.Reenterpassword}
+              </span>
+            )}
+            <br />
+            {backendError && (
+              <span className="error-name-backend-log">{backendError}</span>
+            )}
+            <br />
           </div>
-          <div><button type="submit" id="button-pass">{loading ? (
-                <FontAwesomeIcon id='spinner-icon-pass' icon={faRotateRight} spin />
+          <div>
+            <button type="submit" id="button-pass">
+              {loading ? (
+                <FontAwesomeIcon
+                  id="spinner-icon-pass"
+                  icon={faRotateRight}
+                  spin
+                />
               ) : (
                 "Continue"
-              )}</button></div>
+              )}
+            </button>
+          </div>
         </form>
       </div>
     </div>

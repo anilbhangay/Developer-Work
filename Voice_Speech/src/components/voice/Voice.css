@@ -1,5 +1,10 @@
  body {
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
   background: #3b0e68; 
   color: #fff;
 }
@@ -53,7 +58,7 @@
   z-index: 3;
 } 
 
-.container .play-stop {
+ .play-stop {
   font-size: 45px;
   position: absolute;
   top: 80%;
@@ -62,7 +67,7 @@
 }
 
 
-.container .close-icon {
+ .close-icon {
   font-size: 45px;
   position: absolute;
   top: 80%;
@@ -70,7 +75,7 @@
   cursor: pointer;
 }
 
-.container .close-icon:hover {
+ .close-icon:hover {
   color: #ff0000;
 }
 

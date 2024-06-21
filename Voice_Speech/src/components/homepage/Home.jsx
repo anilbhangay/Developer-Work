@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import "./Home.css";
 import Voice from '../voice/Voice';
-
-const Home = () => {
+import aitalk from '../Assets/Technology.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicrophoneLines } from "@fortawesome/free-solid-svg-icons";
+const Home = ({ onOpenVoice }) => {
   const [button, setButton] = useState(true);
 
   const handleClick = () => {
@@ -13,8 +15,8 @@ const Home = () => {
     <>
       {button ? (
         <div className='main'>
-          <img src="../Assets/Ai-talk.jpeg" alt="logo" />
-          <button onClick={handleClick}>Click</button>
+           <div className='ai-img'><img src={aitalk} alt="logo" /></div>
+          <div onClick={onOpenVoice}><FontAwesomeIcon className='micpho' icon={faMicrophoneLines} /></div>
         </div>
       ) : (
         <Voice />

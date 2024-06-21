@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <>
     <div className='navbar'>
-       <h3 className="logo">
+     <Link to="/"><h3 className="logo">
         <FontAwesomeIcon style={{color:'#fff', width:'20px'}} icon={faMicrophoneLines} /> Ai.<span>TALK</span>
-        </h3>
+        </h3></Link>
         <div className="signup">
           <Link to="/Signup"><button>Signup</button></Link>
         </div>
