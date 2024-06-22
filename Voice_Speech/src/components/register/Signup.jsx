@@ -71,7 +71,7 @@ const Signup = () => {
         
         if (response.ok) {
           // Registration successful
-          history('/Loginform');
+          history('/Login');
           console.log("Register successful");
           // Display success message or redirect to login page
         } else {

@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Password.css";
+import { useNavigate } from "react-router-dom";
 
 const Password = () => {
   const [Email, setEmail] = useState("");
@@ -16,7 +17,7 @@ const Password = () => {
   const [errors, setErrors] = useState({});
   const [backendError, setBackendError] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const navigate = useNavigate();
   // const { token } = useParams();
 
   const handleChange = (e) => {
@@ -80,8 +81,8 @@ const Password = () => {
         if (response.ok) {
           setTimeout(() => {
             setLoading(false); // Turn off loading after 5 seconds
-            window.location.href = "/loginform";
-          }, 2000);
+          navigate("/Login")
+          }, 1000);
           console.log("Password reset successful");
         } else {
           // Password reset failed, handle error

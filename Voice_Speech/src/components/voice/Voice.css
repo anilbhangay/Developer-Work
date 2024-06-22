@@ -40,7 +40,6 @@
   width: 220px;
   height: 220px;
   background-color: rgba(110, 107, 107, 0.862);  
-  /* #2f1e5f */
   animation: circle-size 0.8s linear infinite alternate;
 }
 
@@ -52,7 +51,6 @@
   left: 30%;
   transform: translate(-50%, -50%) scale(5);
   display: block;
-  /* width: 19px; */
   height: 10px;
   margin-top: -64px;
   z-index: 3;
@@ -66,7 +64,6 @@
   cursor: pointer;
 }
 
-
  .close-icon {
   font-size: 45px;
   position: absolute;
@@ -78,30 +75,6 @@
  .close-icon:hover {
   color: #ff0000;
 }
-
-/* .mic-icon::before, .mic-icon::after {
-     content: "";
-     display: block;
-     box-sizing: border-box;
-     position: absolute;
-  } */
-
-/* .mic-icon::before {
-    width: 2px;
-    height: 5px;
-    top: calc(100% + 1px);
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: #fff;
-  }
-  
-  .mic-icon::after {
-    width: 8px;
-    height: 18px;
-    left: 50%;
-    top: -10px;
-    transform: translate(-50%, 0);
-  }  */
 
  .mic-shadow {
   width: 320px;
@@ -117,6 +90,16 @@
   animation: shadow-rotate 1.5s linear infinite;
   transform-origin: center;
 } 
+
+.rotating .mic-shadow {
+  animation-play-state: running;
+}
+
+.mic-shadow {
+  animation-play-state: paused;
+}
+
+
 
 
 @keyframes circle-size {
@@ -138,3 +121,8 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 } 
+
+
+ 
+
+

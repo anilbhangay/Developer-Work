@@ -20,7 +20,7 @@ const Voice = ({ onClose }) => {
   return (
     <>
      <div className="container">
-      <div class="mic">
+      <div class={`mic ${ismicrophone ? "rotating" : ""}`}>
         <div class="mic-icon" onClick={handleclick}>
           <FontAwesomeIcon
             icon={ismicrophone ? faMicrophone : faMicrophoneSlash}
@@ -39,3 +39,6 @@ const Voice = ({ onClose }) => {
 };
 
 export default Voice;
+
+
+
