@@ -124,24 +124,58 @@
 
 
 
+
  @media screen and (max-width: 425px) {
   .mic {
     top: 55%;
   }
 
   .mic::before {
-    width: 300px;
-    height: 300px;
-    background-color: #1a084e;
+    width: 280px;
+    height: 280px;
   }
   
   .mic::after {
-    width: 200px;
-    height: 200px;
-    background-color: rgba(110, 107, 107, 0.862);  
-    animation: circle-size 0.8s linear infinite alternate;
+    width: 170px;
+    height: 170px;
   }
-}
+
+  .mic-icon {
+    font-size: 18px;
+    height: 10px;
+    margin-top: -45px;
+  } 
+
+  .play-stop {
+    font-size: 39px;
+    top: 86%;
+    left: 16%;
+  }
+  
+   .close-icon {
+    font-size: 39px;
+    top: 86%;
+    left: 75%;
+  }
+
+  .mic-shadow {
+    width: 265px;
+    height: 265px;
+  } 
+
+  @keyframes circle-size {
+    from {
+      width: 190px;
+      height: 190px;
+    }
+
+    to {
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+};
 
 
  
