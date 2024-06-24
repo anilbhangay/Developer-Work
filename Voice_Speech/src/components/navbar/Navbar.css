@@ -39,3 +39,21 @@
     background-color: #fff;
     color: #000;
 }
+
+
+
+@media screen and (max-width: 425px) {
+    .navbar .logo {
+        padding-left: 17px;
+        font-size: 18px;
+    }
+
+    .navbar .signup {
+        padding-right: 21px;
+    }
+    
+    .navbar .signup button {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}

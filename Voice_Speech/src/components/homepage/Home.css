@@ -18,3 +18,18 @@
     cursor: pointer;
     color: #fff;
 }
+
+
+@media screen and (max-width: 425px){
+ 
+  .main .micpho {
+    top: 80%;
+    left: 45.5%;
+    font-size: 38px;
+  }
+
+  .main .ai-img  img {
+    height: 100vh;
+    object-fit: fill;
+  }
+}

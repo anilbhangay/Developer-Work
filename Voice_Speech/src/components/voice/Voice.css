@@ -123,6 +123,27 @@
 } 
 
 
+
+ @media screen and (max-width: 425px) {
+  .mic {
+    top: 55%;
+  }
+
+  .mic::before {
+    width: 300px;
+    height: 300px;
+    background-color: #1a084e;
+  }
+  
+  .mic::after {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(110, 107, 107, 0.862);  
+    animation: circle-size 0.8s linear infinite alternate;
+  }
+}
+
+
  
 
 
