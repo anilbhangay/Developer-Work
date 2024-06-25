@@ -131,7 +131,7 @@ const Signup = () => {
               id='icon-eye-signup'
               onClick={togglePasswordVisibility}
             >
-              <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} size='sm' /><br/>
+              <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} size='sm' />
             </span>
           </div>
           <div className='form-links-signup'>

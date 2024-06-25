@@ -126,6 +126,7 @@
 
 
  @media screen and (max-width: 425px) {
+ 
   .mic {
     top: 55%;
   }
@@ -159,8 +160,8 @@
   }
 
   .mic-shadow {
-    width: 265px;
-    height: 265px;
+    width: 250px;
+    height: 250px;
   } 
 
   @keyframes circle-size {
