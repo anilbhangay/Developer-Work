@@ -120,12 +120,12 @@ a {
     line-height: 40px;
     font-size: 28px;
   }
-
   
-  .form-coainter-login {
-    width: 100%;
-    height: auto;
-    padding: 30px;
+  .header-pass {
     align-items: center;
+    padding: 18px 38px;
+    margin-left: 0px;
   }
+  
+  
 }
