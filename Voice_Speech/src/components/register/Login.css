@@ -122,10 +122,54 @@ a {
   }
   
   .header-pass {
-    align-items: center;
     padding: 18px 38px;
     margin-left: 0px;
   }
+   
+  .form-coainter-login {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+  }
   
-  
+  .form-input-login input {
+    width: 92%;
+    height: 41px;
+    margin-left: 0px;
+    margin-top: 18px;
+    margin-bottom: 1px;
+    font-size: 16px;
+  }
+
+  #icon-eye-login {
+    top: -53px;
+    left: 221px;
+    font-size: 16px;
+  }
+
+  .error-name-email {
+    margin-left: 6px;
+    font-size: 14px;
+  }
+
+  .error-name-pass {
+    top: 4px;
+    right: -6px;
+    font-size: 14px;
+  }
+
+  #forgot-pass-log {
+    margin-top: -7px;
+    margin-right: 48px;
+    font-size: 15px;
+  }
+
+  .form-links-login #button-login {
+    width: 75%;
+    height: 47px;
+    margin-top: 18px;
+    margin-left: 26px;
+    font-size: 17px;
+  }
+
 }
