@@ -172,4 +172,10 @@ a {
     font-size: 17px;
   }
 
+  .form-links-login h4 {
+    margin-top: 24px;
+    margin-right: 19px;
+    font-size: 14px;
+  }
+
 }

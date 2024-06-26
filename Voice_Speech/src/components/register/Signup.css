@@ -97,7 +97,7 @@
     text-decoration: none;
     color: #fff;
   }
-
+  
   .form-links-signup h4 a:hover {
     text-decoration: underline;
   }
@@ -166,9 +166,9 @@
   }
 
   .form-links-signup h4 {
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-  } 
+    margin-top: 21px;
+    margin-right: 26px;
+    font-size: 14px;
+  }
   
  }
