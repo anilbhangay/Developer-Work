@@ -99,3 +99,21 @@
     border-radius: 22px;
      text-decoration: none;
   }
+
+
+
+  @media screen and (max-width: 425px){
+    .Forget-form {
+      padding: 18px 38px;
+      margin-left: 0px;
+    }
+
+    .forget-form-text h2 {
+      text-align: center;
+      font-size: 28px;
+      margin: 16px 2px;
+      margin-left: 0px;
+      line-height: 40px;
+    }
+    
+  }
