@@ -9,10 +9,10 @@ a {
 }
 
 .header-pass .header-text h2 {
-  margin: 15px 0;
-  margin-left: 76px;
+  margin: 14px 0;
+  margin-left: 53px;
   line-height: 44px;
-  font-size: 31px;
+  font-size: 30px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -27,7 +27,7 @@ a {
 .form-coainter-login {
   width: 55%;
   height: 50%;
-  padding: 40px;
+  padding: 36px;
   align-items: center;
   border-radius: 12px;
   border: 1px solid #5e5959;
@@ -35,7 +35,7 @@ a {
 }
 
 .form-input-login input {
-  width: 350px;
+  width: 345px;
   height: 45px;
   margin-left: 50px;
   margin-top: 18px;
@@ -44,21 +44,21 @@ a {
   outline: none;
   border-radius: 5px;
   padding: 5px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #icon-eye-login {
   position: relative;
   top: -57px;
   left: 358px;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   color: #000;
 }
 
 .error-name-email {
   margin-left: 55px;
-  font-size: 16px;
+  font-size: 15px;
   color: #ff0000;
 }
 
@@ -66,23 +66,23 @@ a {
   position: relative;
   top: 3px;
   right: -55px;
-  font-size: 16px;
+  font-size: 15px;
   color: #ff0000;
 }
 
 #forgot-pass-log {
   float: right;
-  margin-top: -19px;
-  margin-right: 86px;
-  font-size: 16px;
+  margin-top: -18px;
+  margin-right: 40px;
+  font-size: 15px;
   color: #fff;
 }
 
 .form-links-login #button-login {
-  width: 74%;
+  width: 84%;
   height: 50px;
   align-items: center;
-  margin-top: 23px;
+  margin-top: 26px;
   margin-left: 50px;
   border-radius: 25px;
   line-height: 2px;
@@ -100,12 +100,15 @@ a {
 
 .form-links-login h4 {
   text-align: center;
-  margin-top: 22px;
-  margin-right: 10px;
+  margin-top: 23px;
+  margin-right: 2px;
+  font-size: 15px;
 }
+
 .form-links-login a:hover {
   text-decoration: underline;
 }
+
 .form-links-login p {
   color: blue;
 }
@@ -118,7 +121,7 @@ a {
     text-align: center;
     margin-left: 0px;
     line-height: 40px;
-    font-size: 28px;
+    font-size: 27px;
   }
   
   .header-pass {
@@ -143,25 +146,25 @@ a {
 
   #icon-eye-login {
     top: -53px;
-    left: 202px;
+    left: 200px;
     font-size: 16px;
   }
 
   .error-name-email {
     margin-left: 6px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .error-name-pass {
     top: 4px;
     right: -6px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   #forgot-pass-log {
     margin-top: -7px;
-    margin-right: 48px;
-    font-size: 15px;
+    margin-right: 45px;
+    font-size: 14px;
   }
 
   .form-links-login #button-login {
@@ -175,7 +178,7 @@ a {
   .form-links-login h4 {
     margin-top: 24px;
     margin-right: 19px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
 }
