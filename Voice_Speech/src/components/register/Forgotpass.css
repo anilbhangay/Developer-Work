@@ -100,3 +100,67 @@
      text-decoration: none;
   }
 
+
+  @media screen and (max-width: 425px) {
+    .Forget-form {
+      padding: 18px 30px;
+      margin-left: 0px;
+    }
+
+    .forget-form-text h2 {
+      font-size: 27px;
+      text-align: center;
+      margin: 17px 2px;
+      line-height: 40px;
+    }
+
+    .form-coainter-forget {
+      width: 100%;
+      height: auto;
+      padding: 32px;
+    }
+
+    .form-coainter-forget p {
+      margin-left: 0px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .form-coainter-forget p span {
+      margin-left: 0px;
+      line-height: 25px;
+    }
+    
+    .form-input-forget input {
+      width: 92%;
+      height: 41px;
+      padding: 5px;
+      font-size: 16px;
+      margin-top: 22px;
+      margin-left: 0px;
+      margin-bottom: 4px;
+    }
+
+    .form-coainter-forget .error-name-for {
+      margin-left: 6px;
+      top: -2px;
+      font-size: 13px;
+    }
+
+    .form-links-forget #for-login {
+      width: 75%;
+      height: 47px;
+      margin-left: 24px;
+      margin-top: 22px;
+      font-size: 17px;
+    }
+
+    .form-links-forget h3 {
+      width: 55%;
+      padding: 10px;
+      font-size: 15px;
+      margin-left: 54px;
+      margin-top: 25px;
+    }
+  }
