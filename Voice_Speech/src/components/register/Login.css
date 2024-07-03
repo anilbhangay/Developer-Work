@@ -20,7 +20,7 @@ a {
 
 .header-pass {
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 35px;
   margin-left: 420px;
 }
 
@@ -58,7 +58,7 @@ a {
 
 .error-name-email {
   margin-left: 55px;
-  font-size: 15px;
+  font-size: 14px;
   color: #ff0000;
 }
 
@@ -66,7 +66,7 @@ a {
   position: relative;
   top: 3px;
   right: -55px;
-  font-size: 15px;
+  font-size: 14px;
   color: #ff0000;
 }
 
