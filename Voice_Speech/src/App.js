@@ -43,3 +43,69 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import './App.css';
+
+// function App() {
+//   const [question, setQuestion] = useState('');
+//   const [response, setResponse] = useState('');
+//   const [audioBase64, setAudioBase64] = useState('');
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const res = await fetch('http://13.235.75.33:8080/ask', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({ text: question }),
+//       });
+//       const data = await res.json();
+//       setResponse(data.response);
+//       setAudioBase64(data.audio_base64);
+//     } catch (err) {
+//       console.error(err);
+//     }
+//   };
+
+//   const playAudio = () => {
+//     if (audioBase64) {
+//       const audio = new Audio(`data:audio/wav;base64,${audioBase64}`);
+//       audio.play();
+//     }
+//   };
+
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <h1>Ask a Question</h1>
+//         <form onSubmit={handleSubmit}>
+//           <input
+//             type="text"
+//             value={question}
+//             onChange={(e) => setQuestion(e.target.value)}
+//             placeholder="Type your question"
+//             required
+//           />
+//           <button type="submit">Ask</button>
+//         </form>
+//         <div>
+//           <h2>Response:</h2>
+//           <p>{response}</p>
+//           {audioBase64 && (
+//             <button onClick={playAudio}>Play Audio</button>
+//           )}
+//         </div>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
