@@ -60,7 +60,7 @@ export default App;
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const res = await fetch('http://13.235.75.33:8080/ask', {
+//       const res = await fetch('http://13.232.155.101:8080/ask', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',

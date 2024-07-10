@@ -82,7 +82,7 @@
 
 //   useEffect(() => {
 //     if (transcript) {
-//       fetch("/speech_to_text", {
+//       fetch("http://13.232.155.101:8080/ask", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -157,7 +157,7 @@ const Voice = ({ onClose }) => {
 
     if (!isMicrophone) {
       try {
-        const res = await fetch('http://13.235.75.33:8080/ask', {
+        const res = await fetch('http://13.232.155.101:8080/ask', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -216,3 +216,8 @@ const Voice = ({ onClose }) => {
 };
 
 export default Voice;
+
+
+
+
+
